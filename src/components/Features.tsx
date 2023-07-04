@@ -37,7 +37,7 @@ const Features:React.FC = () => {
        brand:brand,
        price:price
       }
-      let res = await axios.post("http://localhost:8000/api/add/cars/new", cars)
+      let res = await axios.post("https://resful-web-api.onrender.com/api/add/cars/new", cars)
       toast.success(res?.data?.message, {position:"top-center"})
       setData(res?.data)
       setInterval(() => {

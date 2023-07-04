@@ -8,7 +8,7 @@ const ListCheckout:React.FC = () => {
    getProductList()
   },[])
   const getProductList = async () => {
-    let res = await axios.get("http://localhost:8000/api/customer/list")
+    let res = await axios.get("https://resful-web-api.onrender.com/api/customer/list")
     setProductList(res?.data)
   }
 

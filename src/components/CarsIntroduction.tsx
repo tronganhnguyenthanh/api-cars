@@ -9,7 +9,7 @@ const CarsIntroduction:React.FC = () => {
    getCarouselList()
   },[])
   const getCarouselList = async () => {
-   let res = await axios.get("http://localhost:8000/api/cars/list")
+   let res = await axios.get("https://resful-web-api.onrender.com/api/cars/list")
    setCarousel(res?.data)
   }
   return (

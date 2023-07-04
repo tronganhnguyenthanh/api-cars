@@ -20,7 +20,7 @@ const CarProduct: React.FC = () => {
     getCarList()
   }, [])
   const getCarList = async () => {
-    let res = await axios.get("http://localhost:8000/api/cars/list")
+    let res = await axios.get("https://resful-web-api.onrender.com/api/cars/list")
     setCars(res?.data)
   }
   const seeDetail = async (_id: string) => {

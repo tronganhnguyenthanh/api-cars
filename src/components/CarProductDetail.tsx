@@ -12,7 +12,7 @@ const CarProductDetail:React.FC = () => {
    getCarDetail(_id)
   },[_id])
   const getCarDetail = async (_id:any) => {
-   let res = await axios.get(`http://localhost:8000/api/car/${_id}`)
+   let res = await axios.get(`https://resful-web-api.onrender.com/api/car/${_id}`)
    setDetail(res?.data)
   }
   const onShopOpen = () => {

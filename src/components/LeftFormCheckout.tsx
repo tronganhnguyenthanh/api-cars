@@ -37,7 +37,7 @@ const LeftFormCheckout: React.FC = () => {
        phoneNumber:phoneNumber,
        address:address
      }
-     let res = await axios.post("http://localhost:8000/api/new/customer", customers)
+     let res = await axios.post("https://resful-web-api.onrender.com/api/new/customer", customers)
      setData(res?.data)
      return true
    }
